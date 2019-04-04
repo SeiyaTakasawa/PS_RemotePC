@@ -2,7 +2,12 @@
 
 ## Overview
 
-制御用PCから複数台のPCを管理するPowerShell
+制御用PCから複数台のPCを管理するPowerShell  
+
+・フォルダを同期する  
+・アプリケーションを起動する  
+・アプリケーションを終了する  
+・起動しているタスクを確認する  
 
 ## Description
 
@@ -25,6 +30,14 @@ IP,User,PW,Folder
 ```
 
 (2) _Settings.csvを設定する
+
+|Key|Value|
+|:---:|:---:|
+|SyncSrc|同期元フォルダパス|
+|SyncDst|同期先フォルダパス|
+
+※同期先フォルダが存在しない場合は自動的に作成されます
+
 
 ``` _Settings.csv
 Key,Value
