@@ -67,4 +67,10 @@ if($src.Length -gt 0){
 }else{
    "Error : _Setting.csvに適切なPathがありません"
 }
+
+# セッション終了
+$endSessionPath = $currentPath + "\\EndSession.ps1"
+powershell $endSessionPath
+
+
 pause
