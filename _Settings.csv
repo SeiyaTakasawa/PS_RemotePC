@@ -1,3 +1,5 @@
 Key,Value
 SyncSrc,C:\SyncTest
 SyncDst,SyncTest
+Process,SyncTest\GVView_1.1\GVView.exe
+
