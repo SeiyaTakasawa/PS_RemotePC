@@ -11,7 +11,13 @@
 
 ## Description
 
+RemoteSetting.ps1：設定用スクリプト
+
 RemoteSync.ps1 : 指定したフォルダを同期する
+
+RemoteStartProcess.ps1：指定したプロセスを実行する
+
+RemoteStopProcess.ps1：指定したプロセスを終了する
 
 
 ## Usage
@@ -35,9 +41,11 @@ IP,User,PW,Folder
 |:---:|:---:|
 |SyncSrc|同期元フォルダパス|
 |SyncDst|同期先フォルダパス|
+|Process|実行したいファイルパス|
+|ProcessName|実行したいプロセス名|
 
+※ファイルパスは共有フォルダをルートとします  
 ※同期先フォルダが存在しない場合は自動的に作成されます
-
 
 ``` _Settings.csv
 Key,Value
@@ -46,8 +54,9 @@ SyncDst,SyncTest
 
 ```
 
+(3) リモートされる側、リモートする側でRemoteSetting.ps1を管理者として一回だけ実行する
 
-(3) 実行する  
+(4) powershellを実行する  
 
 ps1ファイルを右クリック > PowerShellで実行
 
